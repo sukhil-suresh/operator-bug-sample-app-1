@@ -70,6 +70,7 @@ spec:
         - --leader-elect
         - --leader-election-id=sample-operator
         image: controller:latest
+        imagePullPolicy: Always
         name: manager
         securityContext:
           allowPrivilegeEscalation: false

@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-marketplace
 spec:
   sourceType: grpc
-  image: docker.io/sukhilsuresh/sample-operator-bundle-index:1.0.0
+  image: gcr.io/rich-access-174020/ssuresh-operator-catalog:v1.0.2
   displayName: Sample
   publisher: sukhil-suresh
   updateStrategy:

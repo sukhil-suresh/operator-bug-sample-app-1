@@ -1,3 +1,8 @@
-image: nginxinc/nginx-unprivileged
-pvc:
- size: 2Gi
+hook:
+  secret:
+    enable: false
+    namespace: sample
+  role:
+    enable: false
+    namespace: openshift-config
+

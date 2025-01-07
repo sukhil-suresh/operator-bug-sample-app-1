@@ -28,6 +28,13 @@ rules:
   verbs:
   - create
 
+- apiGroups:
+    - "rbac.authorization.k8s.io"
+  resources:
+    - roles
+  verbs:
+    - "*"
+
 ##
 ## Rules for debug.ssuresh.io/v1, Kind: Sample
 ##

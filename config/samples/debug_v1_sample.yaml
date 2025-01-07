@@ -1,10 +1,12 @@
 apiVersion: debug.ssuresh.io/v1
 kind: Sample
 metadata:
-  name: sample-sample
+  name: sample
 spec:
-  # Default values copied from <project_dir>/helm-charts/sample/values.yaml
-  pvc:
-    size: 2Gi
-  
-  
+  hook:
+    secret:
+      enable: false
+      namespace: sample
+    role:
+      enable: false
+      namespace: openshift-config
